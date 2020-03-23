@@ -14,7 +14,6 @@ import {SessionGuard} from './guards/session/session.guard';
 import {ApiService} from './services/api/api.service';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
@@ -38,8 +37,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
             }
         }),
         HomePageModule,
-        AccessPageModule,
-        BrowserAnimationsModule
+        AccessPageModule
     ],
     providers: [
         ApiService,
