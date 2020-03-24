@@ -14,6 +14,9 @@ import {SessionGuard} from './guards/session/session.guard';
 import {ApiService} from './services/api/api.service';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+
 
 @NgModule({
     declarations: [
@@ -37,7 +40,9 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
             }
         }),
         HomePageModule,
-        AccessPageModule
+        AccessPageModule,
+        MatToolbarModule,
+        MatCardModule
     ],
     providers: [
         ApiService,
