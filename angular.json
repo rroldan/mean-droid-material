@@ -22,7 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -45,7 +45,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -107,6 +106,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mean-droid"
+    }
+  },
+  "defaultProject": "mean-droid",
+  "cli": {
+    "analytics": "52f2d37a-e7f6-46f1-97c8-f9254e7c4bc6"
+  }
 }

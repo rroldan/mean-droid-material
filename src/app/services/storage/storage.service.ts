@@ -1,8 +1,10 @@
 import {environment} from '../../../environments/environment';
+import { Injectable } from '@angular/core';
 
 /**
  * Clase a cargo de la gestión del almacenamiento local de la aplicacion.
  */
+@Injectable()
 export class StorageService {
     private local = window.localStorage;
 
